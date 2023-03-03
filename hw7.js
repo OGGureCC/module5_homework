@@ -3,7 +3,7 @@ let even, odd;
 even = 0;
 odd = 0;
 for (i = 0; i < array.length; i++) {
-  if (typeof array[i] == "number") {
+  if (typeof array[i] == "number" && !isNaN(array[i])) {
     if (array[i] == 0) {
       console.log(0);
     } else if (array[i] % 2 == 0) {
